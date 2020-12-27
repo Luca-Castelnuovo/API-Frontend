@@ -1,8 +1,4 @@
 {
     "name": "api.castelnuovo.xyz",
-    "url": "https://api-frontend.netlify.app",
-    "resources": {
-        "bulma": "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css",
-        "signupJS": "https://api.castelnuovo.xyz/assets/javascripts/signup_embed.js"
-    }
+    "url": "https://api-frontend.netlify.app"
 }

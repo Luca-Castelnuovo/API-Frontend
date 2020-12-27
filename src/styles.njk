@@ -1,0 +1,9 @@
+---
+permalink: /site.min.css
+---
+
+{% set css_bulma %}{% include "css/bulma.css" %}{% endset %}
+{% set css_embed %}{% include "css/embed.css" %}{% endset %}
+
+{{ css_bulma | cssmin | safe }}
+{{ css_embed | cssmin | safe }}

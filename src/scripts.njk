@@ -1,0 +1,9 @@
+---
+permalink: /site.min.js
+---
+
+{% set js_core %}{% include "js/core.js" %}{% endset %}
+{% set js_signup %}{% include "js/signup.js" %}{% endset %}
+
+{{ js_core | jsmin | safe }}
+{{ js_signup | jsmin | safe }}
