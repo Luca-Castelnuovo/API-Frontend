@@ -16,8 +16,13 @@ const apiUmbrellaSignupOptions = {
     contactUrl: '{{site.url}}/contact',
     siteName: 'api.castelnuovo.xyz',
     emailFromName: 'api.castelnuovo.xyz',
-    // exampleApiUrl: 'https://api.castelnuovo.xyz/imgpush?api_key= {{ api_key }}',
-    signupConfirmationMessage: '<h2>What Next?</h2>' + '<ul>' + '<li>Explore our <a href="{{site.url}}/docs/">available Web services</a>.</li>' + '<li>Need more help? <a href="{{site.url}}/contact/">Contact us</a>.</li>' + '</ul>',
+    signupConfirmationMessage: `
+        <h2>What Next?</h2>
+        <ul>
+            <li>Read our <a href="{{site.url}}/docs/">docs</a>.</li>
+            <li>Explore our <a href="{{site.url}}/api/">available API's</a>.</li>
+            <li>Need more help? <a href="{{site.url}}/contact/">Contact us</a>.</li>
+        </ul>`,
     verifyEmail: true,
     termsCheckbox: true,
     termsUrl: "{{site.url}}/terms"
