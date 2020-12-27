@@ -9,7 +9,7 @@ title: Contact Us
 
         <hr/>
 
-        <div id="api_umbrella_contac" class="api-umbrella-embed">
+        <div class="api-umbrella-embed">
 
             <p class="required-fields">
                 <abbr title="Required" class="required">
@@ -18,7 +18,7 @@ title: Contact Us
                 Required fields
             </p>
 
-            <form id="api_umbrella_contact_form" role="form">
+            <form method="post" action="https://form.castelnuovo.xyz/form/1eb4840e-3682-6410-96f9-010063756265">
                 <div class="form-group row">
                     <label class="col-sm-4 col-form-label text-right" for="contact_name">
                         <abbr title="Required" class="required">
@@ -28,7 +28,7 @@ title: Contact Us
                     </label>
 
                     <div class="col-sm-5">
-                        <input class="form-control" id="contact_name" name="contact[name]" size="50" type="text" required/>
+                        <input class="form-control" id="contact_name" name="name" size="50" type="text" required/>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@ title: Contact Us
                     </label>
 
                     <div class="col-sm-5">
-                        <input class="form-control" id="contact_email" name="contact[email]" size="50" type="email" required/>
+                        <input class="form-control" id="contact_email" name="email" size="50" type="email" required/>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ title: Contact Us
                     </label>
 
                     <div class="col-sm-5">
-                        <input class="form-control" id="contact_api" name="contact[api]" size="50" type="text" required/>
+                        <input class="form-control" id="contact_api" name="api" size="50" type="text" required/>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ title: Contact Us
                     </label>
 
                     <div class="col-sm-5">
-                        <select id="contact_subject" name="contact[subject]" class="form-control" required>
+                        <select id="contact_subject" name="subject" class="form-control" required>
                             <option value="">Please select one...</option>
                             <option>API key support</option>
                             <option>Requesting higher rate limits</option>
@@ -85,7 +85,7 @@ title: Contact Us
                     </label>
 
                     <div class="col-sm-5">
-                        <textarea class="form-control" cols="40" id="contact_message" name="contact[message]" rows="6" required></textarea>
+                        <textarea class="form-control" cols="40" id="contact_message" name="message" rows="6" required></textarea>
                     </div>
                 </div>
 
@@ -94,12 +94,7 @@ title: Contact Us
                         <button type="submit" class="btn btn-lg btn-primary" data-loading-text="Loading...">Send</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </div>
-
-    {# Import API JS #}
-    <script type="text/javascript" async="true" src="{{ site.resources.apiJS}}"></script>
-    <script type="text/javascript" async="true" src="{{ site.resources.contactJS}}"></script>
 </section>
