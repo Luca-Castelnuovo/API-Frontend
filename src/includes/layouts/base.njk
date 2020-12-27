@@ -10,7 +10,7 @@
         {# Import Bulmas #}
         <link rel="stylesheet" href="{{ site.resources.bulma}}"/>
 
-        {# TODO: temporary #}
+        {# Import API CSS #}
         {% set cssEmbed %}{% include "css/embed.css" %}{% endset %}
         <style>
             {{cssEmbed | cssmin | safe}}

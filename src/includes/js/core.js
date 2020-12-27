@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
 const apiUmbrellaSignupOptions = {
     registrationSource: 'web',
     apiKey: 'ZOAERqZ5v0YHrvz9JTbCRdyEdhVmmtwXwOQ4127J',
-    contactUrl: 'https://api.castelnuovo.xyz/contact',
+    contactUrl: '{{site.url}}/contact',
     siteName: 'api.castelnuovo.xyz',
     emailFromName: 'api.castelnuovo.xyz',
     // exampleApiUrl: 'https://api.castelnuovo.xyz/imgpush?api_key= {{ api_key }}',
     signupConfirmationMessage: '<h2>What Next?</h2>' + '<ul>' + '<li>Explore our <a href="{{site.url}}/docs/">available Web services</a>.</li>' + '<li>Need more help? <a href="{{site.url}}/contact/">Contact us</a>.</li>' + '</ul>',
     verifyEmail: true,
     termsCheckbox: true,
-    termsUrl: "https://api.castelnuovo.xyz/terms"
+    termsUrl: "{{site.url}}/terms"
 };
 
 // Contact Options
