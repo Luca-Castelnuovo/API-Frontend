@@ -1,0 +1,97 @@
+---
+title: Errors
+description: General error codes that can be returned by any api.castelnuovo.xyz Web service.
+---
+
+<div class="block">
+    <div class="content is-medium">
+        <h1 class="title is-1">Errors</h1>
+
+        <hr/>
+
+        <p>
+            Certain, general errors will be returned in a standardized way from all
+            {{ site.name }}
+            web services.
+            Additional, service-specific error messages may also be returned (see individual service documentation for those details).
+            The following list describes the general errors any application may return:
+        </p>
+        <table class="table-container">
+            <tr>
+                <th>Error Code</th>
+                <th>HTTP Status Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>API_KEY_MISSING</td>
+                <td>403</td>
+                <td>An API key was not supplied. See key usage for details on how to pass your API key to the API.</td>
+            </tr>
+            <tr>
+                <td>API_KEY_INVALID</td>
+                <td>403</td>
+                <td>
+                    An invalid API key was supplied.
+                    Double check that the API key being passed in is valid, or <a href="/signup">signup</a> for an API key.
+                </td>
+            </tr>
+            <tr>
+                <td>API_KEY_DISABLED</td>
+                <td>403</td>
+                <td>
+                    The API key supplied has been disabled by an administrator.
+                    Please <a href="/contact">contact us</a> for assistance.
+                </td>
+            </tr>
+            <tr>
+                <td>API_KEY_UNAUTHORIZED</td>
+                <td>403</td>
+                <td>
+                    The API key supplied is not authorized to access the given service.
+                    Please <a href="/contact">contact us</a> for assistance.
+                </td>
+            </tr>
+            <tr>
+                <td>API_KEY_UNVERIFIED</td>
+                <td>403</td>
+                <td>
+                    The API key supplied has not been verified yet.
+                    Please check your e-mail to verify the API key. Please <a href="/contact">contact us</a> for assistance.
+                </td>
+            </tr>
+            <tr>
+                <td>HTTPS_REQUIRED</td>
+                <td>400</td>
+                <td>
+                    Requests to this API must be made over HTTPS.
+                    Ensure that the URL being used is over HTTPS.
+                </td>
+            </tr>
+            <tr>
+                <td>OVER_RATE_LIMIT</td>
+                <td>429</td>
+                <td>
+                    The API key has exceeded the rate limits.
+                    See rate limits for more details or <a href="/contact">contact us</a> for assistance.
+                </td>
+            </tr>
+            <tr>
+                <td>NOT_FOUND</td>
+                <td>404</td>
+                <td>An API could not be found at the given URL. Check your URL.</td>
+            </tr>
+        </table>
+
+        <h4 class="subtitle is-4">Response Body</h4>
+        <p>
+            The error response body will contain an error code value from the table above and a brief description of the error.
+            The descriptions are subject to change, so it's suggested any error handling use the HTTP status code or the error code value for error handling (and not the content of the message description).
+        </p>
+
+        <h4 class="subtitle is-4">Message Response Formats</h4>
+        <p>
+            Depending on the detected format of the request, the error message response may be returned in JSON, XML, CSV, or HTML.
+            Requests of an unknown format will return errors in JSON format.
+        </p>
+    </div>
+</div>

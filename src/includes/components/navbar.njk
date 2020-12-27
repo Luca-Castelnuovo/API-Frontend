@@ -1,0 +1,58 @@
+<nav class="navbar is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <h1 class="title is-5">api.castelnuovo.xyz</h1>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mobileNav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="mobileNav" class="navbar-menu">
+        <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/docs">
+                    Documentation
+                </a>
+
+                <div class="navbar-dropdown">
+                    {%- for doc in collections.docs -%}
+                        <a class="navbar-item" href="{{ doc.url }}">
+                            <strong>{{ doc.data.title }}</strong>
+                        </a>
+                    {%- endfor -%}
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="/api">
+                    API's
+                </a>
+
+                <div class="navbar-dropdown">
+                    {%- for api in collections.api -%}
+                        <a class="navbar-item" href="{{ api.url }}">
+                            <strong>{{ api.data.title }}</strong>
+                        </a>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary btn_signup" href="/signup">
+                        <strong>Request Key</strong>
+                    </a>
+                    <a class="button is-light btn_contact" href="/contact">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,39 @@
+---
+title: Key Usage
+description: How to use your API key after signing up.
+---
+
+<div class="block">
+    <div class="content is-medium">
+        <h1 class="title is-1">Key Usage</h1>
+
+        <hr/>
+
+        <p>
+            After <a href="/signup">signing up</a>, you'll be given your own, unique API key.
+            This 40 character string is your API key. The key:
+        </p>
+
+        <ul>
+            <li>Uniquely identifies you.</li>
+            <li>Gives you access to {{ site.name }}'s Web services.</li>
+            <li>Should be kept private and should not be shared.</li>
+        </ul>
+
+        <p>
+            To use your key, simply pass the key as a URL query parameter when making Web service requests. For example:
+        </p>
+
+        <pre>GET https://api.castelnuovo.xyz/imgpush?api_key=YOUR_KEY_HERE</pre>
+
+        <h4 class="subtitle is-4">Alternative Method</h4>
+
+        <p>
+            Depending on your usage, it can sometimes be easier to pass the API key along as HTTP header.
+            If you want to use this method, pass your API key in as the value of the "X-Api-Key" header. For example:
+        </p>
+
+        <pre>X-Api-Key: YOUR_KEY_HERE</pre>
+
+    </div>
+</div>

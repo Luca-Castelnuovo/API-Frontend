@@ -1,0 +1,18 @@
+---
+layout: default
+title: Documentation
+---
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <h1 class="title is-1">{{ title }}</h1>
+
+        <hr/>
+
+        {%- for doc in collections.docs -%}
+            <h3 class="subtitle is-3">
+                <a href="{{ doc.url }}">{{ doc.data.title }}</a> - {{ doc.data.description }}
+            </h3>
+        {%- endfor -%}
+    </div>
+</section>

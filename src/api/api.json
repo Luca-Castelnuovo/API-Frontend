@@ -1,0 +1,5 @@
+{
+  "layout": "api",
+  "tags": "api",
+  "templateEngineOverride": "njk,md"
+}

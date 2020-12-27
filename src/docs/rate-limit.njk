@@ -1,0 +1,49 @@
+---
+title: Rate Limits
+description: Daily and hourly rate limits on accessing api.castelnuovo.xyz's Web services.
+---
+
+<div class="block">
+    <div class="content is-medium">
+        <h1 class="title is-1">Rate Limits</h1>
+
+        <hr/>
+
+        <p>
+            Limits are placed on the number of {{ site.name }} Web service requests you may make using your API key.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Hourly Limit:</strong> 1.000 requests per hour
+            </li>
+        </ul>
+
+        <p>
+            For each API key, these limits are applied across all {{ site.name }} Web services requests.
+            Exceeding these limits will lead to your API key being temporarily blocked from making further requests.
+            Depending on the limit exceeded, the block will be lifted automatically by waiting until the next hour or calendar day.
+        </p>
+
+        <h4 class="subtitle is-4">Hourly Limit</h4>
+        <p>
+            The hourly counters for your API key reset on a rolling basis.
+        </p>
+
+        <p>
+            <i>Example:</i> If you made 500 requests at 10:15 and 500 requests at 10:25, your API key would become temporarily blocked.
+            This temporary block of your API key would cease at 11:15, at which point you could make 500 requests.
+            At 11:25, you could then make another 500 requests.
+        </p>
+
+        <h4 class="subtitle is-4">Error Response</h4>
+        <p>
+            If your API key exceeds the rate limits, you will receive a response with an HTTP status code of 429 (Too Many Requests).
+        </p>
+
+        <h4 class="subtitle is-4">Need Higher Limits?</h4>
+        <p>
+            If you're building an application that needs higher rate limits, we'd be happy to work with you. <a href="/signup">Contact us</a> for more details.
+        </p>
+    </div>
+</div>

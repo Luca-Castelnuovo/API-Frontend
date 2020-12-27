@@ -1,0 +1,10 @@
+{
+    "name": "api.castelnuovo.xyz",
+    "url": "https://api.castelnuovo.xyz",
+    "resources": {
+        "bulma": "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css",
+        "allJS": "https://api.castelnuovo.xyz/assets/javascripts/all-3c841d57.js",
+        "signupJS": "https://api.castelnuovo.xyz/assets/javascripts/signup_embed.js",
+        "contactJS": "https://api.castelnuovo.xyz/assets/javascripts/contact-1590b2e8.js"
+    }
+}
